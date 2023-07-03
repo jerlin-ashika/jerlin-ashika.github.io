@@ -1,0 +1,147 @@
+:root {
+  --primary: #fbfcee;
+  --secondary: #fbed27;
+  --font-color: #333;
+}
+.text-secondary {
+  color: var(--secondary);
+}
+
+.font-clr {
+  color: var(--font-color);
+}
+.easter-font {
+  font-family: "Eater", cursive;
+}
+.magician-font {
+  font-family: "Aladin", cursive;
+}
+.mi-font {
+  font-family: "Unna", serif;
+}
+.bold-font {
+  font-family: "Bowlby One", cursive;
+}
+.icon-size {
+  width: 32px;
+  height: auto;
+}
+.h-100 {
+  height: 100%;
+}
+.f-12 {
+  font-size: 12px;
+}
+.f-14 {
+  font-size: 14px;
+}
+.f-16 {
+  font-size: 16px;
+}
+.f-18 {
+  font-size: 18px;
+}
+.f-20 {
+  font-size: 20px;
+}
+.f-22 {
+  font-size: 22px;
+}
+.f-24 {
+  font-size: 24px;
+}
+.f-26 {
+  font-size: 26px;
+}
+.f-32 {
+  font-size: 35px;
+}
+/* Padding */
+.p-0 {
+  padding: 0rem;
+}
+
+.p-1 {
+  padding: 1rem;
+}
+
+.p-2 {
+  padding: 2rem;
+}
+
+.p-3 {
+  padding: 3rem;
+}
+
+.p-4 {
+  padding: 4rem;
+}
+
+.p-5 {
+  padding: 5rem;
+}
+
+.px-1 {
+  padding: 0 1rem;
+}
+
+.px-2 {
+  padding: 0 2rem;
+}
+
+.px-3 {
+  padding: 0 3rem;
+}
+
+.px-4 {
+  padding: 0 4rem;
+}
+
+.px-5 {
+  padding: 0 5rem;
+}
+
+.py-1 {
+  padding: 1rem 0;
+}
+
+.py-2 {
+  padding: 2rem 0;
+}
+
+.py-3 {
+  padding: 3rem 0;
+}
+
+.py-4 {
+  padding: 4rem 0;
+}
+
+.py-5 {
+  padding: 5rem 0;
+}
+.pt-5 {
+  padding-top: 500px;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+}
+
+.col {
+  display: flex;
+  flex-direction: column;
+}
+.d-between {
+  display: flex;
+  justify-content: space-between;
+}
+.d-end {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.icon-clr {
+  fill: var(--font-color);
+}
