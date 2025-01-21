@@ -1,8 +1,21 @@
+.Home-container {
+  width: 98%;
+  padding: 0px 0.5%;
+  margin: 0px 1%;
+  padding-top: 30px;
+}
+a {
+  text-decoration: none;
+  color: var(--font-color);
+}
 .name-font {
   font-family: "Bowlby One", cursive;
 }
 .name-font-size {
   font-size: 80px;
+}
+.tittle-font-size {
+  font-size: 45px;
 }
 
 .name-part1 {
@@ -14,4 +27,84 @@
   color: white;
   text-shadow: -5px 1px 0 var(--secondary), 1px 1px 0 #000, 1px -1px 0 #000,
     -1px -1px 0 #000;
+}
+.image-container .myImage {
+  height: 100%;
+  width: 100%;
+}
+.top-padding {
+  padding-top: 20% !important;
+}
+.image-class {
+  position: relative;
+}
+.experiance-design {
+  border: solid var(--font-color) 3px;
+  border-radius: 30px;
+  position: absolute;
+  bottom: -269px;
+  left: -20px;
+  padding: 0px 30px 0px 30px;
+}
+.experiance-size {
+  font-size: 40px;
+  font-weight: 700;
+}
+.download-cv-button {
+  border: solid var(--secondary) 2px;
+  border-radius: 20px;
+  padding: 10px 20px;
+  color: var(--font-color);
+  text-decoration: none;
+  font-weight: 600;
+}
+.download-cv-button:hover {
+  background-color: var(--secondary);
+  color: white;
+}
+@media (max-width: 600px) {
+  .mt-sm-80 {
+    margin-top: 80px !important;
+  }
+  .name-font-size {
+    font-size: 52px;
+  }
+  .name-part1 {
+    margin-right: 10px;
+  }
+  .sm-di-flex {
+    display: flex;
+  }
+  .sm-di-flex-center {
+    display: flex;
+    justify-content: center;
+  }
+  .sm-pdl-1 {
+    padding-left: 1rem;
+  }
+  .sm-pdl-2 {
+    padding-left: 2rem;
+  }
+  .sm-pdx-1 {
+    padding: 0px 1rem;
+  }
+  .sm-pdl-1 {
+    padding-left: 1rem;
+  }
+  .sm-pd-0 {
+    padding: 0px;
+  }
+  .experiance-design {
+    bottom: -125px;
+    left: -14px;
+  }
+  .skill-name {
+    display: none !important;
+  }
+  .w-40per {
+    width: 92% !important;
+  }
+  .sm-text-center {
+    text-align: center;
+  }
 }

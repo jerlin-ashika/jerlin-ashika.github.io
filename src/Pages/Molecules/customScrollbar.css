@@ -1,0 +1,14 @@
+
+body::-webkit-scrollbar {
+    width: 6px;
+    overflow: none;
+  }
+  
+  body::-webkit-scrollbar-track {
+    background: rgb(236, 236, 236) !important;
+  }
+  
+  body::-webkit-scrollbar-thumb {
+    background: var(--secondary);
+    height: 500px;
+  }

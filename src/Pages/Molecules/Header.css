@@ -1,6 +1,9 @@
 .header-container {
-  padding: 0.5%;
-  margin: 1%;
+  padding: 0px 0.5%;
+  margin: 0px 1%;
+  width: 98%;
+  position: absolute;
+  z-index: 7;
 }
 .icon-padding {
   padding: 0% 3% 0% 3%;
@@ -16,7 +19,7 @@ body {
   z-index: 1;
   top: 0;
   right: 0;
-  background-color: rgb(252, 251, 243);
+  background-color: var(--primary);
   overflow-x: hidden;
   transition: width 0.5s ease-in-out; /* Transition on width property */
   padding-top: 90px;
@@ -29,12 +32,42 @@ body {
 .sidenav .side-content {
   padding: 8px 8px 8px 32px;
   text-decoration: none;
-  font-size: 24px;
-  color: #333;
+  font-size: 21px;
+  color:var(--font-color);;
   transition: 0.3s;
+  cursor: pointer;
+  img{
+    display: none;
+  }
 }
+
+
 .sidenav .side-content:hover {
   color: var(--secondary);
+  img{
+    display: block;
+  }
+}
+
+.side-content {
+  position: relative;
+  text-decoration: none;
+  color: black;
+}
+
+.side-content::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  background: var(--secondary);
+  left: 0;
+  bottom: -2px; /* Adjust position below the text */
+  transition: width 0.3s ease-in-out;
+}
+
+.side-content:hover::after {
+  width: 100%;
 }
 
 .top-data {
@@ -65,4 +98,7 @@ body {
   100% {
     opacity: 1;
   }
+}
+.my-logo{
+  width: 100px !important;
 }

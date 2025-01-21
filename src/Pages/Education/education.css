@@ -1,0 +1,74 @@
+.education-container {
+  display: flex;
+  /* flex-direction: column; */
+  justify-content: center;
+  align-items: center;
+  /* margin-left: 9rem; */
+}
+
+.step {
+  padding: 10px;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+
+  background-color: cream;
+}
+
+.v-stepper {
+  position: relative;
+  /*   visibility: visible; */
+}
+
+/* regular step */
+.step .circle {
+  background-color: white;
+  border: 3px solid gray;
+  border-radius: 100%;
+  width: 20px; /* +6 for border */
+  height: 20px;
+  display: inline-block;
+}
+
+.step .line {
+  top: 20px;
+  left: 9px;
+  height: 100%;
+
+  position: absolute;
+  border-left: 3px solid gray;
+}
+
+.step.completed .circle {
+  visibility: visible;
+  background-color: var(--secondary);
+  border-color: var(--secondary);
+}
+
+.step.completed .line {
+  border-left: 3px solid var(--secondary);
+}
+
+.step.active .circle {
+  visibility: visible;
+  border-color: var(--secondary);
+}
+
+.step.empty .circle {
+  visibility: hidden;
+}
+
+.step.empty .line {
+  /*     visibility: hidden; */
+  /*   height: 150%; */
+  top: 0;
+  height: 150%;
+}
+
+.content {
+  margin-left: 20px;
+  display: inline-block;
+  width: 300px;
+  text-align: start;
+}

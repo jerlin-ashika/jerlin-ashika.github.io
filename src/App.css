@@ -1,7 +1,16 @@
 :root {
-  --primary: #fbfcee;
-  --secondary: #fbed27;
+  --primary: #ffffff;
+  --secondary: #d99bff;
   --font-color: #333;
+}
+body {
+  overflow-x: hidden;
+}
+#root {
+  overflow-x: hidden;
+}
+.App {
+  overflow-x: hidden;
 }
 .text-secondary {
   color: var(--secondary);
@@ -23,8 +32,22 @@
   font-family: "Bowlby One", cursive;
 }
 .icon-size {
-  width: 32px;
+  width: 40px;
   height: auto;
+  cursor: pointer;
+}
+.icon-small-size {
+  width: 28px;
+  height: auto;
+  cursor: pointer;
+}
+.icon-xsmall-size {
+  width: 20px;
+  height: auto;
+  cursor: pointer;
+}
+.curser-point {
+  cursor: pointer;
 }
 .h-100 {
   height: 100%;
@@ -56,83 +79,7 @@
 .f-32 {
   font-size: 35px;
 }
-/* Padding */
-.p-0 {
-  padding: 0rem;
-}
 
-.p-1 {
-  padding: 1rem;
-}
-
-.p-2 {
-  padding: 2rem;
-}
-
-.p-3 {
-  padding: 3rem;
-}
-
-.p-4 {
-  padding: 4rem;
-}
-
-.p-5 {
-  padding: 5rem;
-}
-
-.px-1 {
-  padding: 0 1rem;
-}
-
-.px-2 {
-  padding: 0 2rem;
-}
-
-.px-3 {
-  padding: 0 3rem;
-}
-
-.px-4 {
-  padding: 0 4rem;
-}
-
-.px-5 {
-  padding: 0 5rem;
-}
-
-.py-1 {
-  padding: 1rem 0;
-}
-
-.py-2 {
-  padding: 2rem 0;
-}
-
-.py-3 {
-  padding: 3rem 0;
-}
-
-.py-4 {
-  padding: 4rem 0;
-}
-
-.py-5 {
-  padding: 5rem 0;
-}
-.pt-5 {
-  padding-top: 500px;
-}
-
-.row {
-  display: flex;
-  flex-direction: row;
-}
-
-.col {
-  display: flex;
-  flex-direction: column;
-}
 .d-between {
   display: flex;
   justify-content: space-between;
@@ -144,4 +91,14 @@
 
 .icon-clr {
   fill: var(--font-color);
+}
+.border-cus {
+  border: solid var(--secondary) 2px;
+  border-radius: 20px;
+}
+.fnt-600 {
+  font-weight: 600;
+}
+.border-top-cus {
+  border-top: solid var(--secondary) 1px;
 }
