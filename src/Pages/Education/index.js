@@ -37,25 +37,24 @@ const Education = () => {
         <div className="name-part2 tittle-font-size d-flex justify-content-center">
           Education
         </div>
-        <div className="mi-font f-18 d-flex justify-content-center text-center">
-          <div class="education-container row">
-            {education?.map((dt) => (
-              <div class="step completed col-12 col-md-6 col-lg-3 mb-4 d-flex justify-content-center">
-                <div class="v-stepper">
-                  <div class="circle"></div>
-                  {dt?.line && <div class="line"></div>}
-                </div>
 
-                <div class="content">
-                  <div className="fnt-600 font-clr">{dt?.title}</div>
-                  <a href="https://mcc.edu.in/">
-                    <div>{dt?.collage}</div>
-                  </a>
-                  <div className="font-clr">{dt?.percent}</div>
-                </div>
+        <div class="education-container row m-0">
+          {education?.map((dt) => (
+            <div class="step completed col-12 col-md-6 col-lg-3 mb-4 d-flex justify-content-center">
+              <div class="v-stepper">
+                <div class="circle"></div>
+                {dt?.line && <div class="line"></div>}
               </div>
-            ))}
-          </div>
+
+              <div class="content">
+                <div className="fnt-600 font-clr">{dt?.title}</div>
+                <a href="https://mcc.edu.in/">
+                  <div>{dt?.collage}</div>
+                </a>
+                <div className="font-clr">{dt?.percent}</div>
+              </div>
+            </div>
+          ))}
         </div>
       </div>
     </>

@@ -26,7 +26,7 @@ const Home = () => {
       <div className=" Home-container font-clr" id="home">
         <div className="row m-0 mt-sm-80">
           <div className="col-lg-6 pt-lg-5  mt-lg-5 ps-lg-3">
-            <div className="mi-font f-26  pt-lg-5 sm-pdl-1">
+            <div className="mi-font f-26  pt-lg-5 sm-pdl-1 mt-4">
               <span className="">HELLO,</span>{" "}
               <span className="text-secondary"> MY NAME IS</span>
             </div>
