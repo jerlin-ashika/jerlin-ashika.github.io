@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Portfolio/static/css/main.5961a8e8.css",
-    "main.js": "/Portfolio/static/js/main.579a5623.js",
+    "main.css": "/Portfolio/static/css/main.b686aca4.css",
+    "main.js": "/Portfolio/static/js/main.8ade328b.js",
     "static/js/453.ed3810f9.chunk.js": "/Portfolio/static/js/453.ed3810f9.chunk.js",
     "static/media/MyImage.png": "/Portfolio/static/media/MyImage.f51e223e32dd31e4546d.png",
     "static/media/JERLIN_ASHIKA_J.pdf": "/Portfolio/static/media/JERLIN_ASHIKA_J.6d2e7ce06f41a410f1b4.pdf",
@@ -27,12 +27,12 @@
     "static/media/pop-star.svg": "/Portfolio/static/media/pop-star.4bd294b39d53d416cbe510794e5b846c.svg",
     "static/media/close_w.svg": "/Portfolio/static/media/close_w.cb82937161138ce7a748e321b2042c4a.svg",
     "static/media/close_d.svg": "/Portfolio/static/media/close_d.f9e1fd884e38ced99e021f1ac47b347d.svg",
-    "main.5961a8e8.css.map": "/Portfolio/static/css/main.5961a8e8.css.map",
-    "main.579a5623.js.map": "/Portfolio/static/js/main.579a5623.js.map",
+    "main.b686aca4.css.map": "/Portfolio/static/css/main.b686aca4.css.map",
+    "main.8ade328b.js.map": "/Portfolio/static/js/main.8ade328b.js.map",
     "453.ed3810f9.chunk.js.map": "/Portfolio/static/js/453.ed3810f9.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.5961a8e8.css",
-    "static/js/main.579a5623.js"
+    "static/css/main.b686aca4.css",
+    "static/js/main.8ade328b.js"
   ]
 }
