@@ -20,7 +20,7 @@ const Experience = () => {
   return (
     <>
       <div>
-        <div className="name-part1 tittle-font-size d-flex justify-content-center">
+        <div className="name-part2 tittle-font-size d-flex justify-content-center">
           Experience
         </div>
         <div className="row d-flex justify-content-center gap-2 m-0 mt-4">
