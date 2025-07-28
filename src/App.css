@@ -124,7 +124,7 @@ body {
 }
 
 .border-cus {
-  border: solid var(--font-lite) 2px;
+  border: solid var(--secondary) 2px;
   border-radius: 20px;
 }
 
