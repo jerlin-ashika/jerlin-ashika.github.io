@@ -4,7 +4,7 @@ import moment from 'moment'
 const currentTime = moment().format('LTS')
 console.log("currentTime :", currentTime)
 const initialState = {
-  darkMode: false,
+  darkMode: true,
 };
 
 const StaticReducer = (state = initialState, action) => {

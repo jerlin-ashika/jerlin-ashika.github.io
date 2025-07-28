@@ -34,7 +34,7 @@ const Education = () => {
   return (
     <>
       <div>
-        <div className="name-part2 tittle-font-size d-flex justify-content-center">
+        <div className="name-part1 tittle-font-size d-flex justify-content-center">
           Education
         </div>
 

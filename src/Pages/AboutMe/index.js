@@ -1,17 +1,17 @@
 import React from "react";
 import "./about.css";
-import popStar from "../../Images/pop-star.svg";
+import popStar from "../../Images/icons/sparkling_white.png";
 const AboutMe = () => {
   return (
     <>
       <div>
-        <div className="name-part2 tittle-font-size d-flex justify-content-center">
+        <div className="name-part1 tittle-font-size d-flex justify-content-center">
           About Me
         </div>
         <div className="mi-font f-18 d-flex justify-content-center text-center mt-4">
           <div className="me-5 skill-name">
             <img
-              className="icon-size "
+              className="icon-size-md "
               title="Reactjs"
               alt="react"
               src={popStar}
@@ -26,7 +26,7 @@ const AboutMe = () => {
           </div>
           <div className="ms-5 skill-name">
             <img
-              className="icon-size "
+              className="icon-size-md "
               title="Reactjs"
               alt="react"
               src={popStar}

@@ -1,13 +1,7 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Header from "../Molecules/Header";
 import "./Home.css";
-import MyImage from "../../Images/MyImage.png";
-import linkedin_d from "../../Images/linkedin-d.svg";
-import linkedin_w from "../../Images/linkedin-w.svg";
-import email_d from "../../Images/email-d.svg";
-import email_w from "../../Images/email-w.svg";
-import instagram_d from "../../Images/instagram-d.svg";
-import instagram_w from "../../Images/instagram-w.svg";
+import MyImage from "../../Images/profile_img/mine.png";
 import myCV from "../../Images/document/JERLIN_ASHIKA_J.pdf";
 import { useSelector } from "react-redux";
 import AboutMe from "../AboutMe";
@@ -19,16 +13,32 @@ import Footer from "../Molecules/footer";
 
 const Home = () => {
   const { darkMode } = useSelector((state) => state.StaticReducer);
-  console.log(":darkMode :", darkMode);
+  const [isLoading, setIsLoading] = useState(true);
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setIsLoading(false);
+    }, 1500);
+    return () => clearTimeout(timer);
+  }, []);
+
+  if (isLoading) {
+    return (
+      <div className="loader-wrapper">
+        <div class="loader"></div>
+      </div>
+    );
+  }
   return (
     <>
       <Header />
       <div className=" Home-container font-clr" id="home">
-        <div className="row m-0 mt-sm-80">
-          <div className="col-lg-6 pt-lg-5  mt-lg-5 ps-lg-3">
+  
+        <div className="row m-0 mt-sm-80 ">
+          <div className="col-lg-6 pt-lg-5  mt-lg-5 ps-lg-3 text-background-box">
             <div className="mi-font f-26  pt-lg-5 sm-pdl-1 mt-4">
-              <span className="">HELLO,</span>{" "}
-              <span className="text-secondary"> MY NAME IS</span>
+              <span className="font-clr">Hey there! </span>{" "}
+              <span className="text-secondary">I’m</span>
             </div>
             <div className="magician-font name-font-size px-3 sm-di-flex">
               <span className="name-part1">JERLIN</span>
@@ -36,50 +46,21 @@ const Home = () => {
               <span className="name-part2">ASHIKA</span>
             </div>
             <div className="px-3 sm-di-flex">
-              <span className="mi-font f-24 ">I AM, </span>{" "}
-              <span className="magician-font f-24 ">Frontend Developer</span>
+              <span className="mi-font font-clr f-24 ">A </span>{" "}
+              <span className="magician-font font-clr f-24 ">
+                Frontend Developer
+              </span>
             </div>
             <div className=" px-3">
               <div className="pt-4 pb-2">
-                <span className="mi-font f-18 ">
-                  From TN, India. I have rich experience in web design, also I
-                  am good at React Framework.
-                  <br className="" />I love to talk with you about our unique
+                <span className="mi-font f-18 font-clr">
+                 who turns ideas into pixel-perfect, interactive web experiences. From concept to code, 
+                  <br className="" />I make the web look good and work even better.
                 </span>
               </div>
             </div>
 
             <div className=" px-3 pt-4 d-flex">
-              <a href="mailto:jerlinashikaj@gmail.com" className="me-2">
-                <img
-                  className="icon-small-size "
-                  src={darkMode ? email_w : email_d}
-                  title="Email"
-                  alt="Email"
-                />
-              </a>
-              <a
-                href="https://www.linkedin.com/in/jerlin-ashika"
-                className="me-2"
-              >
-                <img
-                  className={`icon-small-size `}
-                  src={darkMode ? linkedin_w : linkedin_d}
-                  title="Linkedin"
-                  alt="Linkedin"
-                />
-              </a>
-              <a
-                href="https://www.linkedin.com/in/jerlin-ashika"
-                className="me-2"
-              >
-                <img
-                  className="icon-small-size "
-                  title="Instagram"
-                  alt="Instagram"
-                  src={darkMode ? instagram_w : instagram_d}
-                />
-              </a>
               <div className="pb-4">
                 <a href={myCV} download className="download-cv-button ">
                   Download CV
@@ -97,10 +78,19 @@ const Home = () => {
                 <span className="experiance-design">
                   <div className="row">
                     <div className="col experiance-size ">2+</div>
-                    <div className="col">
+                    <div className="col experience-left-cont">
                       <div className="row">Years</div>
                       <div className="row">experience</div>
                     </div>
+                  </div>
+                </span>
+                <span className="projects-design">
+                  <div className="row">
+                    <div className="col experience-left-cont">
+                      <div className="row">Worked on</div>
+                      <div className="row">Projects</div>
+                    </div>
+                    <div className="col experiance-size ">8+</div>
                   </div>
                 </span>
               </span>
@@ -108,6 +98,16 @@ const Home = () => {
           </div>
         </div>
       </div>
+      <div className="custom-cubes">
+       <div class="loop cubes">
+          <div class="item cubes"></div>
+          <div class="item cubes"></div>
+          <div class="item cubes"></div>
+          <div class="item cubes"></div>
+          <div class="item cubes"></div>
+          <div class="item cubes"></div>
+        </div>
+        </div>
       <div className="about-container px-lg-3  py-5" id="about">
         <AboutMe />
       </div>

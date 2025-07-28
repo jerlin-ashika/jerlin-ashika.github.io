@@ -1,10 +1,10 @@
 import React from "react";
-import linkedin_d from "../../Images/linkedin-d.svg";
-import linkedin_w from "../../Images/linkedin-w.svg";
-import email_d from "../../Images/email-d.svg";
-import email_w from "../../Images/email-w.svg";
-import instagram_d from "../../Images/instagram-d.svg";
-import instagram_w from "../../Images/instagram-w.svg";
+import linkedin_d from "../../Images/icons/linkdin.png";
+import linkedin_w from "../../Images/icons/linkdin.png";
+import email_d from "../../Images/icons/mail.png";
+import email_w from "../../Images/icons/mail.png";
+import instagram_d from "../../Images/icons/insta.png";
+import instagram_w from "../../Images/icons/insta.png";
 import { useSelector } from "react-redux";
 const Footer = () => {
   const { darkMode } = useSelector((state) => state.StaticReducer);

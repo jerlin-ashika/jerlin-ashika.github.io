@@ -1,32 +1,29 @@
 import React, { useState } from "react";
 import "./Header.css";
 import "./customScrollbar.css";
-import menu_b from "../../Images/menu-black.png";
-import menu_w from "../../Images/menu-white.png";
-import close_d from "../../Images/close_d.svg";
-import close_w from "../../Images/close_w.svg";
-import arrow_w from "../../Images/arrow_w.svg";
-import dark_mode from "../../Images/dark_mode.png";
-import light_high from "../../Images/light_mode.png";
-import logo from "../../Images/namelogo.svg";
-import whitelogo from "../../Images/white-logo.svg";
+import menu_b from "../../Images/icons/menu_dark.png";
+import menu_w from "../../Images/icons/menu_light.png";
+import close_d from "../../Images/icons/close_dark.png";
+import close_w from "../../Images/icons/close_white.png";
+import arrow_w from "../../Images/icons/arrow_light.png";
+import dark_mode from "../../Images/icons/moon_dark.png";
+import light_high from "../../Images/icons/moon_light.png";
+import logo from "../../Images/profile_img/namelogo.svg";
+import whitelogo from "../../Images/profile_img/white-logo.svg";
 import { useDispatch } from "react-redux";
 import { changeDarkMode } from "../../Redux/StaticData/action";
 
 const Header = () => {
   const dispatch = useDispatch();
-
   const [isSideNavOpen, setIsSideNavOpen] = useState(false);
-  const [dark, setDark] = useState(true);
+  const [dark, setDark] = useState(false);
   const [render, setRender] = useState(false);
 
   const openNav = () => {
-    console.log("open nav is working :");
     setIsSideNavOpen(!isSideNavOpen);
     setRender(true);
   };
   const toggleDarkMode = () => {
-    console.log("onclick function is working");
     setDark(!dark);
     setRender(false);
     dispatch(changeDarkMode(dark));
@@ -59,7 +56,7 @@ const Header = () => {
               />
               <img
                 className={`${
-                  isSideNavOpen && !dark ? "icon-small-size" : "icon-size"
+                  !isSideNavOpen ? "icon-small-size" : "icon-size"
                 }  px-1 curser-point data ${
                   isSideNavOpen && render
                     ? "change"
@@ -82,6 +79,16 @@ const Header = () => {
             </div>
           </div>
         </div>
+        <div className="custom-cubes">
+          <div class="loop cubes-top">
+            <div class="item cubes"></div>
+            <div class="item cubes"></div>
+            <div class="item cubes"></div>
+            <div class="item cubes"></div>
+            <div class="item cubes"></div>
+            <div class="item cubes"></div>
+          </div>
+        </div>
       </div>
       <div className={`sidenav ${isSideNavOpen ? "open" : ""} row m-0`}>
         {/* <div className="col h-100"></div> */}
@@ -89,7 +96,7 @@ const Header = () => {
           {sidebar?.map((dt) => (
             <a href={dt?.link} onClick={() => setIsSideNavOpen(false)}>
               <span className="row m-0 side-content">
-                <img className="icon-size" src={`${arrow_w}`} alt="arrow" />
+                <img className="icon-size-md" src={`${arrow_w}`} alt="arrow" />
                 {dt?.name}
               </span>
             </a>

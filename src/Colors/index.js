@@ -7,12 +7,12 @@ const Color = () => {
   useEffect(() => {
     const root = document.documentElement;
     if (darkMode === false) {
-      root.style.setProperty("--primary", "#f6f6f6");
-      root.style.setProperty("--secondary", "#d7b3ed"); //other color #ebdbf4
-      root.style.setProperty("--font-color", "#504d53");
+      root.style.setProperty("--primary", "#f7f6f4");
+      root.style.setProperty("--secondary", "#a1400f"); //other color #ebdbf4
+      root.style.setProperty("--font-color", "#442b1c");
     } else {
       root.style.setProperty("--primary", "#010101");
-      root.style.setProperty("--secondary", "#D99BFF");
+      root.style.setProperty("--secondary", "#a1400f");
       root.style.setProperty("--font-color", "#fff8f8");
     }
   }, [darkMode]);

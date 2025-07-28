@@ -1,13 +1,13 @@
 import React from "react";
-import react_w from "../../Images/reactjs-w.svg";
-import next_w from "../../Images/nextjs-w.svg";
-import js_w from "../../Images/javascript-w.svg";
-import html_w from "../../Images/html-w.svg";
-import css_w from "../../Images/css-w.svg";
-import boot_w from "../../Images/bootstrap-w.svg";
-import github_w from "../../Images/github-w.svg";
-import scss_w from "../../Images/scss-w.svg";
-import figma_w from "../../Images/figma-w.svg";
+import react_w from "../../Images/icons/react.png";
+import next_w from "../../Images/icons/nextjs.png";
+import js_w from "../../Images/icons/js.png";
+import html_w from "../../Images/icons/html.png";
+import css_w from "../../Images/icons/css.png";
+import boot_w from "../../Images/icons/bootstrap.png";
+import github_w from "../../Images/icons/github.png";
+import scss_w from "../../Images/icons/scss.png";
+import figma_w from "../../Images/icons/figma.png";
 const Skills = () => {
   const skills = [
     {
@@ -68,7 +68,7 @@ const Skills = () => {
   return (
     <>
       <div>
-        <div className="name-part2 tittle-font-size d-flex justify-content-center text-center">
+        <div className="name-part1 tittle-font-size d-flex justify-content-center text-center">
           Professional Skills
         </div>
         <div className="row d-flex justify-content-center gap-4 mt-4 sm-pdl-1">
