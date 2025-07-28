@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/static/css/main.dbcb1bd6.css",
-    "main.js": "/static/js/main.119ee9aa.js",
+    "main.css": "/static/css/main.1ad25aea.css",
+    "main.js": "/static/js/main.07d8e3ae.js",
     "static/js/453.ed3810f9.chunk.js": "/static/js/453.ed3810f9.chunk.js",
     "static/media/mine.png": "/static/media/mine.a68476a26492718f9ccc.png",
     "static/media/JERLIN_ASHIKA_J.pdf": "/static/media/JERLIN_ASHIKA_J.ee7b73a4e2dc7025871f.pdf",
     "static/media/namelogo.svg": "/static/media/namelogo.5d42a41547fb3c64b623f17c73f681c7.svg",
     "static/media/white-logo.svg": "/static/media/white-logo.99236c69024b03fd0a0627d104e1e46b.svg",
     "index.html": "/index.html",
-    "main.dbcb1bd6.css.map": "/static/css/main.dbcb1bd6.css.map",
-    "main.119ee9aa.js.map": "/static/js/main.119ee9aa.js.map",
+    "main.1ad25aea.css.map": "/static/css/main.1ad25aea.css.map",
+    "main.07d8e3ae.js.map": "/static/js/main.07d8e3ae.js.map",
     "453.ed3810f9.chunk.js.map": "/static/js/453.ed3810f9.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.dbcb1bd6.css",
-    "static/js/main.119ee9aa.js"
+    "static/css/main.1ad25aea.css",
+    "static/js/main.07d8e3ae.js"
   ]
 }
